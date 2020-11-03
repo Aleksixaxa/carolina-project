@@ -1,0 +1,127 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background: #000024;
+}
+
+header .center-wrapper-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1200px;
+  margin: auto;
+  height: 100px;
+}
+
+header .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ececec;
+  font-size: 14px;
+}
+
+header nav ul .active {
+  color: #E46F1F;
+  border-top: solid 1px #E46F1F;
+}
+
+.center-wrapper {
+  width: 1200px;
+  margin: auto;
+}
+
+.center-wrapper .main-images {
+  margin-top: 20px;
+  height: 85vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+  grid-gap: 3em;
+  grid-area: "area1 area2" "area3 area4";
+}
+
+.center-wrapper .main-images h1 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.center-wrapper .main-images p {
+  color: white;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.center-wrapper .main-images button {
+  border: white 3px solid;
+  background: none;
+  padding: 15px;
+  color: white;
+  font-weight: 700;
+}
+
+.center-wrapper .main-images button:hover {
+  text-decoration: underline;
+  background: #E46F1F;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.center-wrapper .main-images .i1 {
+  grid: area1;
+  background: url("../imgs/house.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.center-wrapper .main-images .i2 {
+  grid: area2;
+  text-align: center;
+  background: url("../imgs/coffee.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.center-wrapper .main-images .i3 {
+  grid: area3;
+  background: #000020;
+}
+
+.center-wrapper .main-images .i4 {
+  grid: area4;
+}
+/*# sourceMappingURL=style.css.map */

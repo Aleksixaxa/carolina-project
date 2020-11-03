@@ -1,0 +1,118 @@
+$navColor : #000024;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+    background: $navColor;
+
+
+
+    .center-wrapper-header {
+        display: flex;
+        align-items: center;
+        width: 1200px;
+        margin: auto;
+        height: 100px;
+    }
+    .logo {
+        flex: 1;
+        
+        img {
+            width: 150px;
+        }
+    }
+    nav {
+        
+        ul {
+            display: flex;
+
+            li {
+                margin-right: 20px;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(236, 236, 236);
+                    font-size: 14px;
+                }
+            }
+            .active {
+                color: #E46F1F;
+                border-top: solid 1px #E46F1F;
+            }
+        }
+    }
+}
+
+
+.center-wrapper {
+    width: 1200px;
+    margin: auto;
+
+    .main-images {
+        margin-top: 20px;
+        height: 85vh;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-gap: 3em;
+        grid-area: "area1 area2"
+        "area3 area4";
+
+        h1 {
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: white;
+
+        }
+        p {
+            color: white;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        button {
+            border: white 3px solid;
+            background: none;
+            padding: 15px;
+            color: white;
+            font-weight: 700;
+        }
+        button:hover {
+            text-decoration: underline;
+            background: #E46F1F;
+            transition: .5s ease-in-out;
+        }
+
+        .i1 {
+            grid: area1;
+            background: url('../imgs/house.jpg');
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+        }
+        .i2 {
+            grid: area2;
+            text-align: center;
+            background: url('../imgs/coffee.jpg');
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+        }
+        .i3 {
+            grid: area3;
+            background: #000020;
+        }
+        .i4 {
+            grid: area4;
+        }
+    
+    
+    }
+
+}
