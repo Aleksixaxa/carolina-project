@@ -6,12 +6,12 @@ $navColor : #000024;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
+body {
+    background-color: rgb(245, 245, 245);
+}
 
 header {
     background: $navColor;
-
-
 
     .center-wrapper-header {
         display: flex;
@@ -95,6 +95,7 @@ header {
             background-position: center;
             background-size: cover;
             text-align: center;
+            
         }
         .i2 {
             grid: area2;
@@ -102,15 +103,35 @@ header {
             background: url('../imgs/coffee.jpg');
             background-position: center;
             background-size: cover;
-            text-align: center;
         }
         .i3 {
             grid: area3;
             background: #000020;
+            padding: 15px 20px;
+            column-count: 2;
+            column-width: 100px;
+            column-fill: auto;
+
+            
+                p {
+                    font-size: 13px;
+                }
+                h1 {
+                    font-size: 25px;
+                }
         }
         .i4 {
             grid: area4;
         }
+    }
+
+    .form-section {
+        display: flex;
+        margin-top: 25px;
+    
+    
+    
+    
     
     
     }

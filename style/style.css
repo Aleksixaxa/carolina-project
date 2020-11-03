@@ -6,6 +6,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  background-color: whitesmoke;
+}
+
 header {
   background: #000024;
 }
@@ -113,15 +117,36 @@ header nav ul .active {
   background: url("../imgs/coffee.jpg");
   background-position: center;
   background-size: cover;
-  text-align: center;
 }
 
 .center-wrapper .main-images .i3 {
   grid: area3;
   background: #000020;
+  padding: 15px 20px;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-width: 100px;
+          column-width: 100px;
+  -webkit-column-fill: auto;
+          column-fill: auto;
+}
+
+.center-wrapper .main-images .i3 p {
+  font-size: 13px;
+}
+
+.center-wrapper .main-images .i3 h1 {
+  font-size: 25px;
 }
 
 .center-wrapper .main-images .i4 {
   grid: area4;
+}
+
+.center-wrapper .form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
 }
 /*# sourceMappingURL=style.css.map */
