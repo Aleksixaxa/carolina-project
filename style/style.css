@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #f0f0f0;
 }
 
 header {
@@ -144,9 +144,104 @@ header nav ul .active {
 }
 
 .center-wrapper .form-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 30px;
+  padding: 5em;
+}
+
+.center-wrapper .form-section form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.center-wrapper .form-section form h2 {
+  color: #E46F1F;
+  text-align: center;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.center-wrapper .form-section form input {
+  padding: .4rem;
+  margin: .4rem 0;
+}
+
+.center-wrapper .form-section form .submit {
+  background: #E46F1F;
+  color: white;
+  border: none;
+  height: 30px;
+  cursor: pointer;
+}
+
+.center-wrapper .form-section form .submit:hover {
+  background: #eba77a;
+  -webkit-transition: 20ms ease-in;
+  transition: 20ms ease-in;
+}
+
+.center-wrapper .form-section form TEXTAREA {
+  resize: none;
+}
+
+.center-wrapper .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20rem)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 20rem);
+  grid-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.center-wrapper .cards .card {
+  border: solid 8px #E46F1F;
+  padding: 15px 15px 0 15px;
+  position: relative;
+  height: 20rem;
+}
+
+.center-wrapper .cards .card h2 {
+  color: #E46F1F;
+  margin-bottom: 20px;
+}
+
+.center-wrapper .cards .card button {
+  border: #E46F1F 3px solid;
+  background: none;
+  padding: 15px;
+  color: #E46F1F;
+  font-weight: 700;
+}
+
+.center-wrapper .cards .card .placement {
+  position: absolute;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.center-wrapper .text-wrapper h2 {
+  color: #E46F1F;
+  margin-bottom: 13px;
+}
+
+.center-wrapper .text-wrapper ul {
+  margin-bottom: 13px;
+  margin-left: 40px;
 }
 /*# sourceMappingURL=style.css.map */
